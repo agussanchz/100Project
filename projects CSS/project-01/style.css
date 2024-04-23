@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes botar {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.nav {
+    background-color: grey;
+    border: 1px solid antiquewhite;
+    width: 10rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+    animation-name: botar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.menu_li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+    color: antiquewhite;
+}
